@@ -1,0 +1,58 @@
+
+We are making trees. A tree is a graph that goes downwards with branches, hierachical data structure, upside down.
+
+Trees are partial order, not strict like linked lists. Good for organizing data in form of hieracrhy, like family tree.
+
+Top of node is the root, think of upside down tree. Leaves are bottom, points to empty trees only. 
+Children of nodes are the ones below parent, depth is number of paths and height is number of levels, start index 0.
+
+Linked list linked in tree like way is a tree. Very quick if parent node known, such as half brother.
+Searching through is now O(logn), since depends on height on tree now, bascially a binary search + linked list.
+
+Can be used to make better dictionaries.
+
+A binary tree is where a parent at most has 2 children. One left and one right. Grows O(n^2) if n > 1
+
+You can traverse a tree through different means:
+    
+    Pre taversal: start a right, traverse left through tree, traverse right through tree. Best for small trees
+    Look at slide 10 tree, once left, then check left, then right, then check child's left...
+
+    In order traversal: Traverse left sub-tree, get node, traverse right tree
+    Slide 11, go all the way down left, go to parent, search right, go to parent's parent, go all the way down right
+
+    Post order traversal: Go all the way left, go all the way right, then work up to root
+    Look at slide 12, go all the way left, check it's sibling, then work up. Search on basis of subtrees
+
+Pre order starts with root, ends with right most leaf, Post order starts with left most leaf and ends at root,
+In order starts with most left and ends with most right
+
+
+Pre: root, left, right
+In: left, root, right
+Post: left, right root
+
+Trees are an ordered mapping.
+
+Parent always has a lesser child (left) and greater child (right) to be a binary search tree. Otherwise no bang for bucket
+
+Look at slide 31! Basically lots of if k> / k<
+
+Length = number of edges/vertices. On the left, biggest always works, can't be too big, otherwise it is on the right 
+
+Worst case O(n) if tree is a 6-5-4-3..., average O(n) however. We can prevent O(n) trees by mixing up/rotating.
+
+Tree is balanced if height if log2(n)
+
+Balance Factor: height(right subtree) - height(left subtree) each node has one so children's subtrees are similar size.
+BF of 2 can be rebalanced, ok if -1, 0 , 1. This is height invariant
+
+Can grab middle thing and make L/root/R tree if line of 3 values. 
+
+Rotations make it more balanced, largest value only with larger child. 
+
+Left fixes +2, right fixes -2 potentially, if T2 bad, can be potentially as bad if rotating. 
+A left then right can fix this. Works every time
+
+Rotations are O(1)
+

@@ -1,0 +1,21 @@
+
+If dictionary keys were mutable, then there's no structre and values have to move with keys. It's like a function.*
+Keys mutable, values immutable*
+An object is an instance of a class* Each object has class.
+Self means instance of class upon method is being called.* Object itself
+You cannot just print instance = class(x,y,z....) print(instance), python does not know how to represent instance as string, additional
+    method needed 
+    __str_(self):
+        return f'{Mascot: {self.name}} <- only prints this when doing print(instance) can be whatever you want. Sets string
+        represent***
+__len__ works for all because all has same magic method*
+You can override and change magic methods in your class*
+Magic methods usually first, then public methods, then private good for readability*
+Abstraction is _/* only shows what we need, Encapsulation is where we put private methods and organization***
+__str__ and __int__ big uses of polymorphism.  
+
+PT2:
+Abstraction is hiding details, Encapsulation is dividing private and public.
+On a remote, buttons is abstraction of inner code that affect TV. Buttons public, inner working private.*
+We initialize private attributes in list of self.x = value; not in parenthesis since we do not want users changing it***
+return (x <= 8) can do insetad of if statement **

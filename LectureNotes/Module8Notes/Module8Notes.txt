@@ -1,0 +1,23 @@
+
+Mapping is dictionary abstract data type
+
+Linked Lists have node class first, hashmaps need pariring class
+
+List Mapping is O(n), we can add extra organization. Can do O(1) barcode idea
+
+We have to organize indices, hash functions assign bucket location to all key-value pairs.
+Now we if look, we only have to see hash function.
+
+We want very little collisions, or too many records in a bucket. Hashes only work for dictionaries/sets since changing 
+key/set value changes buckets, then changes hashes.... becomes a mess
+
+We can choose hash on basis of association with key, examples sum of ASCII values, but this is slow.
+
+We can then try hash(key) % len(buckets). If same value, we make list in that bucket, now we only scroll through
+very small amount of items compared to O(n) called seperate chaining.
+
+We can rehash if too many collisions, set everything in new bucket on basis of more buckets
+
+Collisions, things in same bucket makes that bucket a list of those items, some are very ok
+
+We can rehash with a lazy update by keeping track of load factor. When not enough buckets, double it

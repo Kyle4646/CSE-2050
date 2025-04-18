@@ -1,0 +1,20 @@
+
+Priority Queues use trees, derived from queue (FIFO)
+
+When we add something to queue, we say where we want it to be in line
+
+We can squish a tree (heap tree), heap ordered meaning every node is smaller than children
+HEAP TREE IS A DIFFERENT TREE THAN BST, every node has smaller children. Smallest node always root
+
+HT is complete, leafs are in leftmost position, largest stuff at bottom. No relationship between siblings
+Does not matter if you put it left or right. 
+
+For a heap, as you go up from leaf, must get smaller
+
+If we make heap a list, child of left index is 2i+1, right is 2i+2, can just go to index
+Root is index 0, only works if complete
+
+Always inserted at leaf, keeps swapping until in right place, logn swaps, goes up tree
+
+To remove min and allow it to be complete, put newest node at top, now we know its complete but not a heap
+We can downheap and swap it downward but finding smaller and smaller child, allows it to be complete (slide 21)

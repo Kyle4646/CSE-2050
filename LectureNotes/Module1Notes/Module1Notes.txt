@@ -1,0 +1,23 @@
+Strings are a collection, they are immutable. u[1]='u' does not work if u=string.
+We can uppercase string (.upper) to uppercase all letters, .lower() does same. *
+.capitalize() uppercases ONLY first letter*
+string.count('letter') counts numvber of letters or words* can combine .lower.count()
+.strip() removes white space()
+.split() removes on basis of what's inside, () does words. Makes list* ('a') splits on a's, removes them from list. *
+Lists are ordered and can be different types.
+Can do .sort() to sort a list with letters/numbers by letters and then ASCII value* 
+List.remove('name'), list.pop(index)*
+List.insert(index, value)*
+Tuples add strucutre
+
+*
+colors=['red, 'yellow', 'blue']
+colors[1:]=['orange'] <- brackets
+colors=['red', 'orange']
+colors[:1]=['orange'] <- brackets
+colors=['orange', 'yellow', 'blue']
+coolors[1]='orange' <- normal string, otherwise mini list goes inside list
+*
+
+Ask to interview Matt, data scientists for 10+ years.
+Set is mutable, elements not mutable* 

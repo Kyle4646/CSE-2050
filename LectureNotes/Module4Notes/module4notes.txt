@@ -1,0 +1,29 @@
+2^n + n^10000 O(2^n), 2 raised to n way more powerful, n! most powerful, n^n basically as n -> infinity *
+return statements end, so it inside a nested alogirthm can make it O(1), watch out print vs return ***
+
+A stack adds things to top and removes top item, O(1), book example. LIFO, push, pop, peek, size ,isEmpty, cereal Kenrick*
+
+Wrapper example of composition*
+
+Queue is FIFO, enqueue, dequeue, peek (shows next item to be taken), size, isEmpty, milk Deen*
+
+def pop(self):
+        try:
+            return self._L.pop()
+        except:
+            raise RuntimeError("pop from empty stack"), stop in tracks ***
+
+
+def pop(self):
+        try:
+            return self._L.pop()
+        except IndexError:
+            print("dumbass you popped from empty stack"), warn, will still run but wanrs user ***
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Normal deque without linked list has 2 O(n), add/remove first *
+
+items never really deleted, just forgotten, can cause memory issues **
+
+#item, 3rd, 2nd, makes it so 2nd link is new item and 3rd item is before item (new items) link***

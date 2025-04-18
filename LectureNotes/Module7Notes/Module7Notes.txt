@@ -1,0 +1,49 @@
+
+First Two Bubble Sort:
+[24, 36, 6, 18, 12, 30] 4
+[24, 6, 18, 12, 30, 36] 3
+[6, 18, 12, 24, 30, 36] Two inversions, n^2 swaps
+
+First Two Insertion Sort:
+[24, 36, 6, 18, 12, 30] 1
+[24, 36, 6, 18, 12, 30] 1
+[6, 24, 36, 18, 12, 30] n swaps
+
+First Two Selection Sort:
+[24, 36, 6, 18, 12, 30] 0
+[6, 36, 24, 18, 12, 30] 1
+[6, 12, 24, 18, 36, 30] n swaps
+
+MergeSort:
+
+[8, 7, 6, 5, 4, 3, 2, 1] > (A) [8, 7, 6, 5], (B) [4, 3, 2, 1] Divides
+
+[5, 6, 7, 8], [1, 2, 3, 4] Sorts divided lists
+
+A[0] > B[0], so B[0] smallest item, since already sorted lists
+[B[0], A[0], then find whether B[1] or A[1] smaller and keep going]
+
+Does this from tree up, it is divided all the way and keeps being merged until final list.
+Broken all the way down, then fixed all the way up.
+
+Mergesort much quicker, but uses much more memory, NOT in-place
+
+
+QuickSort:
+
+We pick a pviot, last element in list, then we go through every element and say if its higher or lower than pivot.
+
+[12, 49, 39, 5, 32, 16, 51, 43, 36] > 36 pivot
+[12, 16, 39, 5, 32, 49, 51, 43, 36] > new pivot, keep pivotting, split based on higher/lower than pivot. 
+Swap something too big/too small, then put pivot in middle
+
+Find something larger and smaller than pivot, swap them. Not stable however, but in place 
+
+Quicksort O(n^2) since bad pivots can make it very slow. If sorted, pivot at end could make it worst case scenario since 
+it puts the last element in the middle. We do random pivot to prevent this.  
+
+
+Selection:
+
+If pivot lands in right spot, you found it. Example, if pivot in middle spot, that is median
+If pivot in third spot, knocks out first two items for median, and can keep searching.

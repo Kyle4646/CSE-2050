@@ -1,0 +1,10 @@
+import function
+import class from function
+
+class TestClass(unittest.TestCase):
+    test_function(self):
+        self.assertEqual(function, output)
+        self.assertRaises(type, function) 
+
+
+

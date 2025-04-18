@@ -1,0 +1,10 @@
+Recursion is solution on basis of solutions of smaller instances (Fibanocci)
+
+fact(6)
+6 * fact(5)
+6*5*fact(4).... ***
+
+dynamic program is storing stuff*
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

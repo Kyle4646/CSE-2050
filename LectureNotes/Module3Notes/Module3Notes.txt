@@ -1,0 +1,11 @@
+
+If private code needs testing, code too complicated.
+Test enough cases to be confident, including edge cases. 
+Tests should keep passing when code updated*
+One function for each behavior, unknown what is wrong if you test multiple things, helps isolate*
+You can also do assertequal, assertlessthan, assertmorethan... **
+Write tests before you code
+Efficeincy depends on input and machine * 20 min washing machine good calculator 20 min bad.
+Running time = n of operations * more important, universal
+Sorting is log since as we go through theres less to sort, etc *
+Omega, best case; theta, average case, O worst case, always talk about worst case ***

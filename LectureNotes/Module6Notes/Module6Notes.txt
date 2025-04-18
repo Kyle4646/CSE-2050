@@ -1,0 +1,35 @@
+
+If unsorted, O(n) has to search everything
+
+If sorted, can keep cutting in half O(log2(n))
+
+If recursion is last action, it is tail-recursion
+
+In a sorted list finding max/min O(1) ... L[-1]
+
+L[i] > L[i+1] guarntees max is at the end, it bubbled up, is an invarient always met by this algorithm
+
+Invariant = Always True 
+
+Selection:
+    Smallest value index 0
+    Second smallest index 1 Always O(n^2)
+    Keep iterating
+
+Insertion:
+    We split up list into different parts relative to eachother.
+    Increasing subsets sorted.
+    
+    Everytime we go to next index, it is making a "sublist" / only sorting based on sublist. Onlt n swaps again at most,
+    since each new item has to swap once at most.
+
+    Best case O(n), same with bubble sort, but average for both O(n^2)
+
+Stable is when alogorithms maintain order they started with if there is duplicates.
+Unstable is if there's duplicates, it is swapped. This is bad as if we need to sort within sorting.
+Example: All milk sorted by expiration date, and we need to sort by % now, must keep lowest expiration date in front per %.
+
+Bubble/insertion only switch if >, selection is not 
+
+In-place sorting does NOT make new list to sort, sorts list itself, no extra memory created. O(1) space complexity. 
+All 3 are in-place.
