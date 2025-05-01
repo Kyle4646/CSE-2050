@@ -1,0 +1,24 @@
+
+BST UNBALANCED: O(n)
+BST BALANCED: O(log2(n))
+BST easy to find largest/smallest keep going right 
+
+Hepas must be complete for 2i+1/2 easy to find parent/child
+
+Graphs show connections between people, graph theory number of 0 λ = number of graphs
+
+Graphs are not very structured, unlike every other data type
+
+Every node (vertex) has a edges
+V = {1, 2, 3, 4, 5} set of nodes
+E = {(1, 2), (2, 3), (3, 4) ... } Set of tuple of edges, connections
+
+We focus on a simple graph, no self-loops, vertex pointing to itself
+No vertice can connect to another one twice, only one arrow between vertices.
+
+Directed, where order of edges matters, undirected where it does not.
+
+We do not remove vertices, since we also have to remove all edges, too complicated for now
+
+In degree: number of in neighbors (followers/being pointing to)
+Out degree: number of out neighbors (following/pointing to)
